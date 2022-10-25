@@ -7,12 +7,13 @@ const CountItem = ({ title, count }) => {
         backgroundColor: "#78b3f5",
         borderRadius: "13px",
         marginTop: "30px",
-        width: "140px",
+        width: "160px",
+        boxShadow: "rgba(161, 201, 246, 0.5) -18px -18px 0px",
       }}
     >
       <div
         style={{
-          height: "100px",
+          height: "120px",
           fontSize: "2.5rem",
           display: "flex",
           justifyContent: "center",
