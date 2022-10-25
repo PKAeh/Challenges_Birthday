@@ -1,39 +1,26 @@
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 
-import './App.css'
+// import "./App.css";
 
 function App() {
-  //state
-  const [time, setTime] = useState(new Date())
-
-  //function input TimeStamp and then return day,hours,minutes and seconds
-  const getCountdown = (birthDate) => {
-    let now = new Date().getTime()
-    let timeCount = birthDate - now //convert milliseconds to seconds
-
-    let days = Math.floor(timeCount / (60 * 60 * 24)) //convert seconds to days
-    let hours = Math.floor(
-      (timeCount % (60 * 60 * 24)) / (60 * 60) //convert seconds to hours
-    )
-    // let minutes
-    // let seconds
-
-    return [days, hours]
-  }
-
-  useEffect(() => {
-    const intervalTask = setInterval(() => {
-      setTime(new Date())
-    }, 1000) //1000 millisecond = 1 second
-    return () => clearInterval(intervalTask)
-  }, [])
-
   return (
-    <div className='container'>
-      {time.getDate()}/{time.getMonth() + 1}/{time.getFullYear()}{' '}
-      {time.getHours()}:{time.getMinutes() + 1}:{time.getSeconds()}
+    <div className="container">
+      <div
+        className="row justify-content-center align-items-center"
+        style={{ height: "100vh" }}
+      >
+        <div className="text-center col-md-8">
+          <h1 className="mb-3">Countdown to my birthday</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quas
+            obcaecati atque? Aliquam architecto illum, dignissimos, amet
+            incidunt at expedita quia, ex error molestiae impedit in est.
+            Numquam, soluta dolor.
+          </p>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
