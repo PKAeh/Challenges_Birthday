@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Calendar from "./components/Calendar";
 
 // import "./App.css";
 
@@ -17,6 +18,7 @@ function App() {
             incidunt at expedita quia, ex error molestiae impedit in est.
             Numquam, soluta dolor.
           </p>
+          <Calendar />
         </div>
       </div>
     </div>
