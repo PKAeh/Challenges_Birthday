@@ -5,7 +5,7 @@ import Calendar from "./components/Calendar";
 
 function App() {
   return (
-    <div className="container">
+    <div className="container" style={{ backgroundColor: "red" }}>
       <div
         className="row justify-content-center align-items-center"
         style={{ height: "100vh" }}
